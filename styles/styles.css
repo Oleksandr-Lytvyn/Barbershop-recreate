@@ -1,0 +1,49 @@
+body {
+  font-family: "open sans", sans-serif;
+}
+
+:root {
+  --accent-color: #ff6c00;
+  --white-color: #ffffff;
+  --text-dark-color: #303030;
+  --top-text-light-color: rgba(157, 164, 189, 0.6);
+  --text-grey-color: #555555;
+  --text-light-color: #9da4bd;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+/* -----------HEADER----------- */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  color: var(--text-dark-color);
+}
+
+.logo-item {
+  fill: currentColor;
+}
+
+.header-links-list {
+  display: flex;
+}
+
+.header-links-item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header-tel {
+  margin-left: 319px;
+}
