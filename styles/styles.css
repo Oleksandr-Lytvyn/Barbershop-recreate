@@ -11,6 +11,12 @@ body {
   --text-light-color: #9da4bd;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
 .link {
   text-decoration: none;
   display: block;
@@ -21,7 +27,37 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid green;
+}
+
+.btn {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* -----------HEADER----------- */
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .header .container {
   display: flex;
@@ -46,4 +82,180 @@ body {
 
 .header-tel {
   margin-left: 319px;
+}
+
+.btn-header {
+  margin-left: 40px;
+}
+
+/* -----------HERO----------- */
+
+.hero .container {
+  display: flex;
+}
+
+.hero-socials-list {
+  width: 93px;
+}
+
+.hero-content {
+  padding-left: 96px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-photos {
+  display: flex;
+}
+
+/* -----------ABOUT----------- */
+
+.about {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.about-content {
+  margin-left: 64px;
+}
+
+.about-photos-item + .about-photos-item {
+  margin-left: 30px;
+}
+
+/* -----------PRICES----------- */
+
+.prices {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.prices-lists {
+  display: flex;
+}
+
+.prices-list {
+  flex-grow: 1;
+  padding: 40px 30px;
+}
+
+.prices-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-prices {
+  margin: 0 auto;
+}
+
+/* -----------BENEFITS----------- */
+
+.benefits {
+  padding-top: 143px;
+  padding-bottom: 137px;
+}
+
+.benefits .container {
+  display: flex;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+.benefits-list-item {
+  width: 170px;
+  height: 133px;
+  background-color: grey;
+}
+
+.benefits-list-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.benefits-content {
+  margin-left: 130px;
+}
+
+/* -----------MASTERS----------- */
+
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.cards-list {
+  display: flex;
+}
+
+.cards-list-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.masters-name {
+  text-align: center;
+}
+
+.masters-position {
+  text-align: center;
+}
+
+.cards-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.cards-social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.cards-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+/* -----------GALERY----------- */
+
+.galery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.galery-list {
+  display: flex;
+  justify-content: center;
+}
+
+.galery-list-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* -----------CONTACTS----------- */
+
+.contacts .container {
+  display: flex;
+}
+
+.left-side {
+  width: 657px;
 }
