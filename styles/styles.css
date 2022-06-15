@@ -95,8 +95,10 @@ ol {
 
 .header {
   padding-top: 32px;
-  padding-bottom: 32px;
-  background-color: #555555;
+  /* padding-bottom: 32px; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header .container {
@@ -114,6 +116,7 @@ ol {
 
 .header-links-list {
   display: flex;
+  margin-left: 70px;
 }
 
 .header-links-item {
@@ -145,16 +148,40 @@ ol {
 
 .hero .container {
   display: flex;
+  align-items: flex-end;
+}
+
+.hero-soc {
+  width: 90px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .hero-socials-list {
-  width: 93px;
+  display: flex;
+  transform: rotate(-90deg) translate(-19px);
+  align-items: center;
+  transform-origin: top left;
+}
+
+.hero-socials-list::before {
+  content: "";
+
+  width: 60px;
+  height: 1px;
+  background-color: var(--text-dark-color);
+  margin-right: 40px;
 }
 
 .hero-content {
-  padding-left: 96px;
-  padding-top: 272px;
-  padding-bottom: 206px;
+  padding: 272px 96px 206px 96px;
+  padding-right: 452px;
+  background-color: var(--text-dark-color);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/bg-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
 }
 
 .hero-title {
