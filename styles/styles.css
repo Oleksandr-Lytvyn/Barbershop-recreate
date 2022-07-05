@@ -2,16 +2,6 @@ body {
   font-family: "open sans", sans-serif;
 }
 
-:root {
-  --accent-color: #ff6c00;
-  --white-color: #ffffff;
-  --text-dark-color: #303030;
-  --top-text-light-color: rgba(157, 164, 189, 0.6);
-  --text-grey-color: #555555;
-  --text-light-color: #9da4bd;
-  --bg-grey-color: #f7f7f7;
-}
-
 ul,
 ol {
   margin: 0;
@@ -36,40 +26,6 @@ ol {
   outline: 1px solid green;
 }
 
-.btn {
-  display: block;
-  width: 160px;
-  height: 40px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  background-color: transparent;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  color: var(--text-dark-color);
-}
-
-.btn-light {
-  display: block;
-  width: 160px;
-  height: 40px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  background-color: transparent;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  color: var(--white-color);
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -91,10 +47,30 @@ ol {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-dark-color);
+  display: flex;
+  align-items: center;
+}
+
+.top-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--text-dark-color);
+  margin-right: 20px;
 }
 
 .top-text-light {
   color: var(--top-text-light-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--text-dark-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .bottom-text {
@@ -163,10 +139,7 @@ ol {
   letter-spacing: 0.1em;
   color: var(--white-color);
   margin-left: 319px;
-}
-
-.btn-header {
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* -----------HERO----------- */
@@ -181,6 +154,7 @@ ol {
   transform-origin: top left;
   width: 93px;
   padding-left: 23px;
+  padding-bottom: 40px;
 }
 
 .hero-socials-list {
@@ -269,6 +243,11 @@ ol {
   background-repeat: no-repeat;
 }
 
+.prices-title {
+  margin-bottom: 44px;
+  color: var(--white-color);
+}
+
 .prices-lists {
   display: flex;
 }
@@ -277,6 +256,7 @@ ol {
   flex-grow: 1;
   padding: 40px 30px;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: 50px;
 }
 
 .prices-list + .prices-list {
@@ -402,21 +382,21 @@ ol {
   color: var(--accent-color);
 }
 
-.cards-social-list {
+.social-list {
   display: flex;
   justify-content: center;
 }
 
-.cards-social-item {
+.social-list__item {
   width: 44px;
   height: 44px;
 }
 
-.cards-social-item:not(:first-child) {
+.social-list__item:not(:first-child) {
   margin-left: 10px;
 }
 
-.cards-social-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
