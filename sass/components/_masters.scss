@@ -1,32 +1,3 @@
-:root {
-  --accent-color: #ff6c00;
-  --white-color: #ffffff;
-  --text-dark-color: #303030;
-  --top-text-light-color: rgba(157, 164, 189, 0.6);
-  --text-grey-color: #555555;
-  --text-light-color: #9da4bd;
-  --bg-grey-color: #f7f7f7;
-}
-
-.btn {
-  display: block;
-  width: 160px;
-  height: 40px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--text-dark-color);
-}
-
-.btn-light {
-  color: var(--white-color);
-}
-
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -40,7 +11,7 @@
 }
 
 .cards-list__item {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .masters-name {
@@ -58,6 +29,7 @@
   line-height: 1.35;
   text-align: center;
   letter-spacing: 0.02em;
+
   color: var(--accent-color);
 }
 
@@ -83,4 +55,4 @@
   height: 100%;
   border-radius: 50%;
   background-color: var(--white-color);
-}/*# sourceMappingURL=main.css.map */
+}
