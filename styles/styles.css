@@ -351,20 +351,6 @@ ol {
 
 /* -----------GALERY----------- */
 
-.galery {
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
-
-.galery-list {
-  display: flex;
-  justify-content: center;
-}
-
-.galery-list-item:not(:first-child) {
-  margin-left: 30px;
-}
-
 /* -----------CONTACTS----------- */
 
 .contacts .container {

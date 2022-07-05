@@ -1,0 +1,14 @@
+.galery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.galery__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.galery__item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
