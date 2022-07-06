@@ -14,6 +14,10 @@ ol {
   color: currentColor;
 }
 
+address {
+  font-style: normal;
+}
+
 .list {
   list-style: none;
 }
@@ -352,11 +356,3 @@ ol {
 /* -----------GALERY----------- */
 
 /* -----------CONTACTS----------- */
-
-.contacts .container {
-  display: flex;
-}
-
-.left-side {
-  width: 657px;
-}

@@ -1,0 +1,54 @@
+.contacts .container {
+  display: flex;
+  background-color: #191c26;
+  padding: 130px 58px;
+}
+
+.contacts__left-side {
+  width: 657px;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.address-list {
+  margin-top: 40px;
+}
+
+.address-list__item {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.address-list__icon {
+  background-color: transparent;
+  margin-right: 16px;
+}
+
+.contacts__time-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 70px;
+}
+
+.contacts__time {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  margin-top: 20px;
+}
