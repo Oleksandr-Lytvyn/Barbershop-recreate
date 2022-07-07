@@ -22,14 +22,6 @@ address {
   list-style: none;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 1px solid green;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -41,59 +33,6 @@ address {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.top-text {
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-dark-color);
-  display: flex;
-  align-items: center;
-}
-
-.top-text::before {
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--text-dark-color);
-  margin-right: 20px;
-}
-
-.top-text-light {
-  color: var(--top-text-light-color);
-}
-
-.title {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
-  color: var(--text-dark-color);
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.bottom-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--text-grey-color);
-}
-
-.bottom-text-light {
-  color: var(--text-light-color);
-}
-
-.small-text {
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
-  color: var(--text-grey-color);
 }
 
 /* -----------HEADER----------- */
@@ -235,51 +174,6 @@ address {
 }
 
 /* -----------PRICES----------- */
-
-.prices {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  max-width: 1280px;
-  margin: 0 auto;
-  background-color: #111319;
-  background-image: url(../images/bg-prices.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.prices-title {
-  margin-bottom: 44px;
-  color: var(--white-color);
-}
-
-.prices-lists {
-  display: flex;
-}
-
-.prices-list {
-  flex-grow: 1;
-  padding: 40px 30px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  margin-bottom: 50px;
-}
-
-.prices-list + .prices-list {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.prices-list-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: #9da4bd;
-}
-
-.btn-prices {
-  margin: 0 auto;
-}
 
 /* -----------BENEFITS----------- */
 
