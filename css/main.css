@@ -14,11 +14,73 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  color: currentColor;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 .btn {
@@ -94,6 +156,14 @@ img {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .masters {
@@ -173,18 +243,49 @@ img {
   display: flex;
   background-color: #191c26;
   padding: 130px 58px;
+  background-image: url(../images/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 625px 644px;
 }
 
 .contacts__left-side {
   width: 657px;
 }
 
-.contacts__title {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+.contacts__form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 44px;
+  margin-top: 44px;
+}
+
+.input {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+}
+.input:first-child {
+  margin-right: 30px;
+}
+
+.contacts__name {
+  width: 270px;
+}
+
+.contacts__tel {
+  width: 260px;
+}
+
+.contacts__textarea {
+  width: 560px;
+  height: 76px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
 }
 
 .address-list {
@@ -199,6 +300,9 @@ img {
 }
 .address-list__item:not(:last-child) {
   margin-bottom: 20px;
+}
+.address-list__item:first-child {
+  margin-top: 40px;
 }
 
 .address-list__icon {
