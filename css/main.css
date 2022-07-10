@@ -66,6 +66,7 @@ address {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid green;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -79,7 +80,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
@@ -166,6 +167,21 @@ address {
   color: #ffffff;
 }
 
+.copyright {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
+.footer__wrap {
+  padding: 56px 39px;
+}
+
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -239,18 +255,22 @@ address {
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.contacts .container {
-  display: flex;
+.contacts {
   background-color: #191c26;
-  padding: 130px 58px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-image: url(../images/bg-contacts.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 625px 644px;
+  background-size: calc(50% - 15px);
+}
+
+.contacts .container {
+  display: flex;
 }
 
 .contacts__left-side {
-  width: 657px;
+  width: calc(50% + 15px);
 }
 
 .contacts__form {
@@ -286,6 +306,11 @@ address {
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   padding-bottom: 8px;
+}
+
+.contacts__right-side {
+  width: calc(50% - 15px);
+  padding-left: 100px;
 }
 
 .address-list {
@@ -370,4 +395,17 @@ address {
 
 .btn-prices {
   margin: 0 auto;
+}
+
+.about {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.about-content {
+  margin-left: 64px;
+}
+
+.about-photos-item + .about-photos-item {
+  margin-left: 30px;
 }/*# sourceMappingURL=main.css.map */

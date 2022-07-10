@@ -123,19 +123,6 @@
 
 /* -----------ABOUT----------- */
 
-.about {
-  padding-top: 140px;
-  padding-bottom: 120px;
-}
-
-.about-content {
-  margin-left: 64px;
-}
-
-.about-photos-item + .about-photos-item {
-  margin-left: 30px;
-}
-
 /* -----------PRICES----------- */
 
 /* -----------BENEFITS----------- */

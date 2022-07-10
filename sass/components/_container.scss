@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid green;
   @include mobile {
     width: 480px;
   }
@@ -10,6 +11,6 @@
     width: 768px;
   }
   @include desktop {
-    width: 1280px;
+    width: 1200px;
   }
 }
