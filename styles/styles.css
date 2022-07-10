@@ -55,43 +55,6 @@
   align-items: flex-end;
 }
 
-.hero-soc {
-  display: flex;
-  transform-origin: top left;
-  width: 93px;
-  padding-left: 23px;
-  padding-bottom: 40px;
-}
-
-.hero-socials-list {
-  display: flex;
-  align-items: center;
-  transform: rotate(-90deg) translateX(-15px);
-  transform-origin: top left;
-}
-
-.hero-socials-list::before {
-  content: "";
-
-  width: 60px;
-  height: 1px;
-  background-color: var(--text-dark-color);
-  margin-right: 40px;
-  display: flex;
-}
-
-.hero-socials-item {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--text-dark-color);
-}
-
-.hero-socials-item + .hero-socials-item {
-  margin-left: 40px;
-}
-
 .hero-content {
   padding: 272px 96px 206px 96px;
   padding-right: 452px;
