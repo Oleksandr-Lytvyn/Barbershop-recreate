@@ -37,13 +37,18 @@
 
 .bottom-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .bottom-text-light {
+  line-height: 1.62;
   color: var(--text-light-color);
 }
 

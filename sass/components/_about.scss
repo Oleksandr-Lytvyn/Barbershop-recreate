@@ -1,10 +1,25 @@
 .about {
-  padding-top: 140px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @include desktop {
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
 }
 
 .about-content {
   margin-left: 64px;
+}
+
+.about-photos {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.about-photos-item {
+  width: 270px;
 }
 
 .about-photos-item + .about-photos-item {

@@ -24,44 +24,63 @@
   <body>
     <!-- HEADER -->
     <header>
-      <section class="header">
-        <div class="container">
+      <div class="container">
+        <section class="header-mob">
+          <a href="" class="logo-link-mob">
+            <svg class="logo-item-mob" width="66" height="55">
+              <use href="./images/symbol-defs.svg#icon-Logo"></use>
+            </svg>
+          </a>
+          <button class="menu-mob-btn" type="button">
+            <svg width="44" height="44">
+              <use href="./images/symbol-defs.svg#icon-menu_mob"></use>
+            </svg>
+          </button>
+        </section>
+        <section class="header">
           <a href="" class="logo-link">
             <svg class="logo-item" width="66" height="55">
               <use href="./images/symbol-defs.svg#icon-Logo"></use>
             </svg>
           </a>
-          <ul class="list header-links-list">
-            <li class="header-links-item"><a href=""></a>О нас</li>
-            <li class="header-links-item"><a href=""></a>Услуги и цены</li>
-            <li class="header-links-item"><a href=""></a>Мастера</li>
-            <li class="header-links-item"><a href=""></a>Контакты</li>
-          </ul>
-          <a href="tel:+380441111111" class="link header-tel">+38 044 111 11 11</a>
-          <button type="button" class="btn btn-light btn-header">онлайн-запись</button>
-        </div>
-      </section>
+          <div class="header-wrap">
+            <ul class="list header-links-list header-left">
+              <li class="header-links-item"><a href=""></a>О нас</li>
+              <li class="header-links-item"><a href=""></a>Услуги и цены</li>
+              <li class="header-links-item"><a href=""></a>Мастера</li>
+              <li class="header-links-item"><a href=""></a>Контакты</li>
+            </ul>
+            <div class="header-right">
+              <a href="tel:+380441111111" class="link header-tel">+38 044 111 11 11</a>
+              <button type="button" class="btn btn-light btn-header">онлайн-запись</button>
+            </div>
+          </div>
+        </section>
+      </div>
     </header>
     <main>
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <div class="socials socials-hero">
-            <ul class="list socials__list socials-hero__list">
-              <li class="socials__item">
-                <a href="" class="link">Instagram</a>
-              </li>
-              <li class="socials__item">
-                <a href="" class="link">Youtube</a>
-              </li>
-            </ul>
+          <div class="hero__socials">
+            <div class="socials socials-hero">
+              <ul class="list socials__list socials-hero__list">
+                <li class="socials__item">
+                  <a href="" class="link">Instagram</a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="link">Youtube</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="hero-content">
             <p class="top-text top-text-light">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="bottom-text-light">
-              Мы эксперты в модных мужских стрижках. <br />
-              Работаем быстро, осторожно и со вкусом.
+              Мы эксперты в модных мужских<br />
+              стрижках. Работаем быстро, <br />
+              осторожно и со вкусом.
             </p>
           </div>
         </div>
@@ -91,7 +110,7 @@
         </div>
       </section>
       <!-- PRICES -->
-      <section class="prices">
+      <!-- <section class="prices">
         <div class="container">
           <p class="top-text top-text-light">Проведи время в компании лучших мастеров</p>
           <h2 class="title prices-title">Услуги и цены</h2>
@@ -164,9 +183,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- --MASTERS-- -->
-      <section class="masters">
+      <!-- <section class="masters">
         <div class="container">
           <p class="top-text">для настоящих ценителей атмосферы</p>
           <h2 class="title">Наши мастера</h2>
@@ -351,9 +370,10 @@
             </address>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- FOOTER -->
+    <!-- <footer>
       <div class="container">
         <div class="footer__wrap">
           <p class="copyright">&#169; Copyright 2020</p>
@@ -369,6 +389,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

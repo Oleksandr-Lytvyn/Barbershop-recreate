@@ -75,11 +75,15 @@ address {
 }
 @media screen and (min-width: 768px) {
   .container {
+    padding-left: 39px;
+    padding-right: 39px;
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1200px;
   }
 }
@@ -142,13 +146,20 @@ address {
 
 .bottom-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
 }
+@media screen and (min-width: 1200px) {
+  .bottom-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
 
 .bottom-text-light {
+  line-height: 1.62;
   color: var(--text-light-color);
 }
 
@@ -220,11 +231,193 @@ address {
   margin-left: 40px;
 }
 
+.header {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    width: calc(100% - 80px);
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+header .container {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  header .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-mob {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 31px;
+}
+@media screen and (min-width: 768px) {
+  .header-mob {
+    display: none;
+  }
+}
+
+.logo-item-mob {
+  fill: var(--white-color);
+}
+
+.menu-mob-btn {
+  background-color: transparent;
+  border: none;
+  fill: var(--white-color);
+}
+
+.logo-link {
+  color: var(--text-dark-color);
+}
+
+.logo-item {
+  fill: currentColor;
+}
+
+.header-links-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-links-item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+
+.header-links-item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header-wrap {
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-wrap {
+    margin-left: 70px;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-right {
+    flex-direction: column;
+  }
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+  margin-right: 40px;
+}
+
 .footer__wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 56px 39px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.hero__socials {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__socials {
+    display: block;
+  }
+}
+
+.hero-content {
+  width: 100%;
+  padding-top: 208px;
+  padding-bottom: 183px;
+  padding-left: 31px;
+  background-color: var(--text-dark-color);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/bg-header-mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1200px) {
+  .hero-content {
+    padding: 272px 96px 206px 96px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/bg-header.jpg);
+  }
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+  }
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-photos {
+  display: flex;
 }
 
 .masters {
@@ -443,12 +636,31 @@ address {
 }
 
 .about {
-  padding-top: 140px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
 }
 
 .about-content {
   margin-left: 64px;
+}
+
+.about-photos {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about-photos {
+    display: block;
+  }
+}
+
+.about-photos-item {
+  width: 270px;
 }
 
 .about-photos-item + .about-photos-item {
